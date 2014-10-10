@@ -1,3 +1,30 @@
+## How my scripts work
+
+You can source the desired plotting script (plot1.R through plot4.R)
+which should in return source the plot_utility.R script, that contains
+functions and commands required by all the plotting scripts.
+
+The function make.plot() will start the script. Data is loaded from a
+Data directory and with the standard file name "household_power_consumption.txt".
+You can however specify a different path or name with the "file" argument
+(make.plot(file="YourData/YourFilename.txt")).
+
+The script loads the entire data set, so be sure your PC has enough memory. The
+data subset is saved to your R Global Environment and the script will not load the
+data again, unless you either clear the Environment or force a data reload with the
+"reload" argument (make.plot(reload=TRUE)).
+
+Your file gets saved as plotn.png with n corrseponding to the R script.
+
+Please note that the "own_plot" function gets overridden with every script you source,
+so make sure that the desired script is the last to be sourced before the make.plot() function call.
+I would rather have passed the desired plotting function as an argument (e.g. as a function pointer) but
+could not find the right way to do so. Sorry for the inconvenience.
+
+Have Fun!
+
+
+
 ## Introduction
 
 This assignment uses data from
