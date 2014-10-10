@@ -32,7 +32,7 @@ require (grid)          ## Viewport Management for viewing rendered png
 ##  load the data only if necessary (first run) 
 ##  or if asked to (reload=TRUE)
 ## Function can only be called, when one of the "plot_n.R" scripts
-##  is sourced! The plotting function "own_plot" are only supplied
+##  is sourced! The plotting function "own_plot" is only supplied
 ##  in those scripts!
 #####################################################################
 

@@ -4,9 +4,6 @@
 ####        Call make.plot() to run!        ####
 ################################################
 
-## Ensure English labels
-Sys.setlocale("LC_TIME", "English")
-
 
 ## Plotting implementation
 own_plot <- function(df_plotting = df_february){
